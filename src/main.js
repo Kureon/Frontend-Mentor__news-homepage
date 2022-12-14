@@ -1,7 +1,19 @@
-const navToggle = document.getElementById("nav-toggle")
-const navigation = document.getElementById("navigation")
+const primaryHeader = document.querySelector(".primary-header");
+const navToggle = document.querySelector(".mobile-nav-toggle");
+const primaryNav = document.querySelector(".primary-navigation");
 
-navToggle.addEventListener("click", function() {
-    navigation.classList.add("open")
-    console.log("button clicked")
-})
+navToggle.addEventListener('click', () => {
+    primaryNav.hasAttribute('data-visible') 
+    ? navToggle.setAttribute('aria-expanded', false) 
+    : navToggle.setAttribute('aria-expanded', true);
+
+    primaryNav.toggleAttribute('data-visible');
+
+    primaryHeader.toggleAttribute('data-overlay');
+});
+
+const slider = new A11YSlider(document.querySelector('.slider'), {
+    adaptiveHeight: true,
+    arrows: false,
+    dots: true,
+  });
