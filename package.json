@@ -1,8 +1,8 @@
 {
-  "name": "project",
+  "name": "Frontend-Mentor__news-hompage",
   "version": "0.1.0",
   "description": "SASS compile|autoprefix|minimize and live-reload dev server using Browsersync for static HTML",
-  "main": "public/index.html",
+  "main": "docs/index.html",
   "author": "Kureon",
   "scripts": {
     "build:sass": "sass  --no-source-map src/sass:docs/css",

@@ -190,17 +190,17 @@ svg {
     margin-inline: auto;
 }
 
-.columns {
+.grid {
     display: grid;
     grid-auto-flow: row;
-    grid-template-columns: auto;
+    grid-template-columns: 3;
     grid-template-rows: auto;
     // grid-template-areas: "
     // ";
     gap: 1rem;
 }
 
-@media (min-width: 55em) {
+@media (min-width: 45em) {
     .columns {
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
